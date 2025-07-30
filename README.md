@@ -16,10 +16,7 @@
 
 ## 🧩 Solution Architecture
 
-+------------------+ Kafka +---------------------+ SignalR/Web API +----------------------+
-| SensorSimulator | ----------------> | Monitoring.Api | -------------------------> | Monitoring.Client |
-| (Producer) | | (Consumer + DB + Hub)| | (index.html + JS) |
-+------------------+ +---------------------+ +----------------------+
+<pre> +--------------------+ Kafka +------------------------+ SignalR / API +-----------------------+ | SensorSimulator | -----------------------> | Monitoring.Api | -------------------------------> | Monitoring.Client | | (Producer) | | (Consumer + DB + Hub) | | (HTML + JS + Chart) | +--------------------+ +------------------------+ +-----------------------+ | v +-----------+ | PostgreSQL | +-----------+ </pre>
 
 ## 📁 Project Structure
 IoTMonitoring/

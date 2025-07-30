@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>IoT Monitoring</title>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
+    <!-- Адаптер Moment.js для Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+
+    <!-- SignalR -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
+</head>
+<body>
+    <canvas id="chart" width="800" height="400"></canvas>
+
+    <script>
+        // Создаём подключение к SignalR Hub
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("https://localhost:7281/sensorHub")
+            .build();
+
+        // Контекст для Chart.js
+        const ctx = document.getElementById('chart').getContext('2d');
+
+        // Инициализация графика
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: { datasets: [] },
+            options: {
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            unit: 'second'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Time'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Temperature'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Обработка события нового значения
+        connection.on('NewReading', data => {
+
+            console.log(data);
+
+            let ds = chart.data.datasets.find(d => d.label === data.sensorId);
+            if (!ds) {
+                ds = {
+                    label: data.sensorId,
+                    data: [],
+                    borderColor: '#' + Math.floor(Math.random() * 16777215).toString(16),
+                    fill: false
+                };
+                chart.data.datasets.push(ds);
+            }
+            ds.data.push({ x: new Date(data.timestamp), y: data.temperature });
+            chart.update();
+        });
+
+        // Логи для отладки подключения
+        connection.onclose(error => {
+            console.error('SignalR connection closed:', error);
+        });
+
+        // Запуск подключения с выводом статуса
+        connection.start()
+            .then(() => console.log('SignalR connected'))
+            .catch(err => console.error('SignalR connection error:', err));
+    </script>
+</body>
+</html>

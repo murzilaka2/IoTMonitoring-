@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Home\\IoTMonitoring\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|c:\\users\\home\\iotmonitoring\\src\\monitoring.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|solutionrelative:monitoring.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|c:\\users\\home\\iotmonitoring\\src\\monitoring.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|solutionrelative:monitoring.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|c:\\users\\home\\iotmonitoring\\src\\monitoring.api\\services\\sensorconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|solutionrelative:monitoring.api\\services\\sensorconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|c:\\users\\home\\iotmonitoring\\src\\monitoring.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4129AF8A-6EEE-453E-8134-167D5648EC87}|Monitoring.Api\\Monitoring.Api.csproj|solutionrelative:monitoring.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Monitoring.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\appsettings.json",
+              "RelativeToolTip": "Monitoring.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T15:02:55.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SensorConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\Services\\SensorConsumer.cs",
+              "RelativeDocumentMoniker": "Monitoring.Api\\Services\\SensorConsumer.cs",
+              "ToolTip": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\Services\\SensorConsumer.cs",
+              "RelativeToolTip": "Monitoring.Api\\Services\\SensorConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:42:11.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Monitoring.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Monitoring.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T14:38:21.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Monitoring.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Home\\IoTMonitoring\\src\\Monitoring.Api\\Program.cs",
+              "RelativeToolTip": "Monitoring.Api\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T13:49:58.752Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

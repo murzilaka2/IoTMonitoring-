@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "E1jeEo2eMKE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Home\\IoTMonitoring\\src\\SensorSimulator\\SensorSimulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Home\\.nuget\\packages\\confluent.kafka\\2.11.0\\confluent.kafka.2.11.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\librdkafka.redist\\2.11.0\\librdkafka.redist.2.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -60,7 +60,7 @@ IoTMonitoring/
 
 ## 🐳 Quick Start
 
-> Requirements: Docker and .NET 7 SDK
+> Requirements: Docker and .NET 9 SDK
 
 1. Clone the repository:
 ```bash

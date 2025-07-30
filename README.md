@@ -14,7 +14,6 @@
 
 ---
 
-## 🧩 Solution Architecture
 
 ## 🧩 Architecture Overview
 
@@ -28,28 +27,28 @@
 
 
 ## 📁 Project Structure
-IoTMonitoring/
-│
-├── client/ # Web client (index.html, Chart.js, SignalR)
-│ └── index.html
-│
-├── src/
-│ ├── Monitoring.Api/ # ASP.NET Core Web API
-│ │ ├── Data/ # EF Core DbContext
-│ │ ├── Hubs/ # SignalR Hub
-│ │ ├── Migrations/ # EF Core migrations
-│ │ ├── Models/ # SensorData model
-│ │ ├── Services/ # Kafka consumer service
-│ │ └── appsettings.json
-│ │
-│ └── SensorSimulator/ # Kafka producer (console app)
-│ └── Program.cs
-│
-├── docker-compose.yml # Docker Compose file for services
-└── README.md # Project documentation
 
+| Path                                | Description                                      |
+|-------------------------------------|--------------------------------------------------|
+| `client/`                           | Web client (HTML + Chart.js + SignalR)          |
+| └── `index.html`                    | Main frontend file                              |
+|                                     |                                                  |
+| `src/`                              | Source code for backend services                |
+| ├── `Monitoring.Api/`               | ASP.NET Core Web API project                    |
+| ├── ── `Data/`                      | Entity Framework Core DbContext                 |
+| ├── ── `Hubs/`                      | SignalR hub for real-time updates               |
+| ├── ── `Migrations/`                | EF Core migrations                              |
+| ├── ── `Models/`                    | SensorData model class                          |
+| ├── ── `Services/`                  | Kafka consumer background service               |
+| ├── ── `appsettings.json`           | Application configuration                       |
+| └── ── `Program.cs`                 | Entry point for the API                         |
+|                                     |                                                  |
+| └── `SensorSimulator/`             | Kafka producer (console app)                    |
+| └── ── `Program.cs`                 | Sends simulated sensor data to Kafka            |
+|                                     |                                                  |
+| `docker-compose.yml`               | Docker Compose configuration file               |
+| `README.md`                        | Project documentation (this file)               |
 
----
 
 ## ⚙️ Components
 

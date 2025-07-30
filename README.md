@@ -16,7 +16,16 @@
 
 ## 🧩 Solution Architecture
 
-<pre> +--------------------+ Kafka +------------------------+ SignalR / API +-----------------------+ | SensorSimulator | -----------------------> | Monitoring.Api | -------------------------------> | Monitoring.Client | | (Producer) | | (Consumer + DB + Hub) | | (HTML + JS + Chart) | +--------------------+ +------------------------+ +-----------------------+ | v +-----------+ | PostgreSQL | +-----------+ </pre>
+## 🧩 Architecture Overview
+
+| Component            | Role                                                 | Communication                  |
+|----------------------|------------------------------------------------------|---------------------------------|
+| **SensorSimulator**  | Kafka producer that sends temperature and humidity data as JSON messages | → Kafka                         |
+| **Kafka**            | Message broker used to deliver data between services | ↔ SensorSimulator / Monitoring.Api |
+| **Monitoring.Api**   | Kafka consumer, saves data to PostgreSQL, sends data to clients via SignalR, exposes Web API | ↔ Kafka / PostgreSQL / SignalR |
+| **PostgreSQL**       | Stores historical sensor data                        | ← Monitoring.Api                |
+| **Monitoring.Client**| HTML + JavaScript frontend that displays data in real-time and loads history | ← SignalR / Web API            |
+
 
 ## 📁 Project Structure
 IoTMonitoring/
